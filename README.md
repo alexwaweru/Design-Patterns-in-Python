@@ -24,7 +24,7 @@ point around which to structure your design. So the goal of design
  
 **I have researched and tried to implement the following design patterns:** 
 
-##1. Singleton Pattern
+## 1. Singleton Pattern
 ##### Description
 Singleton pattern provides a mechanism to limit the number of the 
 instances of the class to one. Thus the same object is always shared 
