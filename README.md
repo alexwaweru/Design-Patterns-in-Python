@@ -75,5 +75,7 @@ should be controlled or additional functionality should be provided when
 accessing an object.
 
 #### Implementation
+Used the __getattr__( ) to delegate from the proxy class to the implementation.
+
 
 
