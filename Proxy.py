@@ -1,25 +1,48 @@
-class Implementation:
+"""
+Proxy pattern example.
+"""
+from abc import ABCMeta, abstractmethod
 
-    def f(self):
-        print("Implementation.f()")
-
-    def g(self):
-        print("Implementation.g()")
-
-    def h(self):
-        print("Implementation.h()")
+NOT_IMPLEMENTED = "You should implement this."
 
 
-class Proxy:
+class AbstractCar:
+    __metaclass__ = ABCMeta
 
-    def __init__(self):
-        self.__implementation = Implementation()
-
-    def __getattr__(self, name):
-        return getattr(self.__implementation, name)
+    @abstractmethod
+    def drive(self):
+        raise NotImplementedError(NOT_IMPLEMENTED)
 
 
-p = Proxy()
-p.f()
-p.g()
-p.h()
+class Car(AbstractCar):
+
+    def drive(self):
+        print("Car has been driven!")
+
+
+class Driver(object):
+
+    def __init__(self, age):
+        self.age = age
+
+
+class ProxyCar(AbstractCar):
+
+    def __init__(self, driver):
+        self.car = Car()
+        self.driver = driver
+
+    def drive(self):
+        if self.driver.age <= 16:
+            print("Sorry, the driver is too young to drive.")
+        else:
+            self.car.drive()
+
+
+driver = Driver(16)
+car = ProxyCar(driver)
+car.drive()
+
+driver = Driver(25)
+car = ProxyCar(driver)
+car.drive()

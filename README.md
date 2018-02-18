@@ -24,7 +24,7 @@ point around which to structure your design. So the goal of design
  
 **I have researched and tried to implement the following design patterns:** 
 
-## 1. Singleton Pattern
+## 1. Singleton Pattern (Creational)
 ##### Description
 Singleton pattern provides a mechanism to limit the number of the 
 instances of the class to one. Thus the same object is always shared 
@@ -53,7 +53,7 @@ object gets created. However, actual object creation happens when
 we call Singleton.getInstance(). This is how lazy instantiation is 
 achieved.
 
-## 2. Template method Pattern
+## 2. Template method Pattern (Structural)
 #### Description
 The template method pattern is a behavioral design pattern that defines 
 the program skeleton of an algorithm in an operation, deferring some 
@@ -66,7 +66,7 @@ and Football are concrete classes that extend Game and override its methods.
 TemplatePatternDemo, our demo class, will use Game to demonstrate use of 
 template pattern.
 
-## 3. Proxy
+## 3. Proxy Pattern (structural)
 #### Description
 Proxy pattern provides a surrogate class that you use in your code. The real 
 class that does the work is hidden behind this surrogate class. Proxy is used
@@ -77,5 +77,5 @@ accessing an object.
 #### Implementation
 Used the __getattr__( ) to delegate from the proxy class to the implementation.
 
-
+## 4. State Pattern
 
