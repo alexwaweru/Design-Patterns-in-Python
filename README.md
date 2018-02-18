@@ -53,7 +53,7 @@ object gets created. However, actual object creation happens when
 we call Singleton.getInstance(). This is how lazy instantiation is 
 achieved.
 
-## Template method Pattern
+## 2. Template method Pattern
 #### Description
 The template method pattern is a behavioral design pattern that defines 
 the program skeleton of an algorithm in an operation, deferring some 
@@ -65,4 +65,15 @@ template method set to be final so that it cannot be overridden. Rugby
 and Football are concrete classes that extend Game and override its methods.
 TemplatePatternDemo, our demo class, will use Game to demonstrate use of 
 template pattern.
+
+## 3. Proxy
+#### Description
+Proxy pattern provides a surrogate class that you use in your code. The real 
+class that does the work is hidden behind this surrogate class. Proxy is used
+for fronting an implementation. This is important when the access to an object
+should be controlled or additional functionality should be provided when 
+accessing an object.
+
+#### Implementation
+
 
