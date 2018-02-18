@@ -54,12 +54,12 @@ we call Singleton.getInstance(). This is how lazy instantiation is
 achieved.
 
 ## 2. Template method Pattern (Structural)
-#### Description
+##### Description
 The template method pattern is a behavioral design pattern that defines 
 the program skeleton of an algorithm in an operation, deferring some 
 steps to subclasses.
 
-#### Implementation
+##### Implementation
 Implement a Game abstract class defining operations with a 
 template method set to be final so that it cannot be overridden. Rugby 
 and Football are concrete classes that extend Game and override its methods.
@@ -67,15 +67,29 @@ TemplatePatternDemo, our demo class, will use Game to demonstrate use of
 template pattern.
 
 ## 3. Proxy Pattern (structural)
-#### Description
+##### Description
 Proxy pattern provides a surrogate class that you use in your code. The real 
 class that does the work is hidden behind this surrogate class. Proxy is used
 for fronting an implementation. This is important when the access to an object
 should be controlled or additional functionality should be provided when 
 accessing an object.
 
-#### Implementation
+##### Implementation
 Used the __getattr__( ) to delegate from the proxy class to the implementation.
 
-## 4. State Pattern
+## 4. State Pattern (Behavioural)
+The State pattern adds more implementations to Proxy, along with a way to switch
+ from one implementation to another during the lifetime of the surrogate. Unlike
+ proxy, state has more than one implementation and allows you to change 
+ implementation dynamically. This pattern is used in computer programming to 
+ encapsulate varying behavior for the same object based on its internal state.
+ 
+##### Implementation
+1. Define separate (state) objects that encapsulate state-specific behavior for 
+    each state. That is, define an interface (State) for performing state-specific
+     behavior, and define classes that implement the interface for each state.
+2. A class delegates state-specific behavior to its current state object instead
+     of implementing state-specific behavior directly.
+
+
 
