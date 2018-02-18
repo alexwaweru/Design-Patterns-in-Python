@@ -43,4 +43,13 @@ Make sure the class can never be instantiated from outside. But since
 python does not have a private constructor we have to find another way 
 to prevent instantiations. 
 
+##### Implementating the lazy instantiation
+Lazy Initialization postpones the instantiation 
+of a object until its first use. In other words the instance of a class 
+is created when its required to be used for the first time.  
+
+When we say s=Singleton(), it calls the __init__ method but no new 
+object gets created. However, actual object creation happens when 
+we call Singleton.getInstance(). This is how lazy instantiation is 
+achieved.
 
