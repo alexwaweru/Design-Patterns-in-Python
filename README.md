@@ -53,3 +53,16 @@ object gets created. However, actual object creation happens when
 we call Singleton.getInstance(). This is how lazy instantiation is 
 achieved.
 
+## Template method Pattern
+#### Description
+The template method pattern is a behavioral design pattern that defines 
+the program skeleton of an algorithm in an operation, deferring some 
+steps to subclasses.
+
+#### Implementation
+Implement a Game abstract class defining operations with a 
+template method set to be final so that it cannot be overridden. Rugby 
+and Football are concrete classes that extend Game and override its methods.
+TemplatePatternDemo, our demo class, will use Game to demonstrate use of 
+template pattern.
+
