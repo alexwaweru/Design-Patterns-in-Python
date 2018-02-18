@@ -90,6 +90,35 @@ The State pattern adds more implementations to Proxy, along with a way to switch
      behavior, and define classes that implement the interface for each state.
 2. A class delegates state-specific behavior to its current state object instead
      of implementing state-specific behavior directly.
+     
+## 5. Decorator pattern (Structural)
+##### Description
+The use of layered objects to dynamically and transparently add responsibilities 
+to individual objects without affecting the behaviour of other objects from the 
+same class.
 
+Problems the decorator design solves:
+1. Responsibilities should be added to an object dynamically at runtime.
+2. A flexible alternative to subclassing for extending functionality should be 
+provided.
+
+What solution does the decorator pattern describe:
+1. Implement the interface of the extended(decorated) object (component) 
+transparently by forwarding all requests to it and
+2. perform additional functionality before/after forwarding a request.
+
+##### Implementation
+Consider going down to the local coffee shop for a coffee. There are 
+typically many different drinks on offer – espressos, lattes, teas, iced coffees, 
+hot chocolate to name a few, as well as a number of extras (which cost extra too)
+such as whipped cream or an extra shot of espresso. You can also make certain 
+changes to your drink at no extra cost, such as asking for decaf coffee instead 
+of regular coffee.
+
+Quite clearly if we are going to model all these drinks and combinations, there 
+will be sizeable class diagrams. So for clarity we will only consider a subset of
+the coffees: Espresso, Espresso Con Panna, Café Late, Cappuccino and Café Mocha. 
+We’ll include 2 extras - whipped cream (“whipped”) and an extra shot of espresso; 
+and three changes - decaf, steamed milk (“wet”) and foamed milk (“dry”).
 
 
