@@ -161,3 +161,6 @@ The Factory Method design pattern describes how to solve such problems:
 ##### Implementation
 Implemented a basic factory method to help create a shape object. It can create 
 squares or circles.
+
+##### Implementing a polymorphic factory
+
