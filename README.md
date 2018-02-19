@@ -162,4 +162,14 @@ The Factory Method design pattern describes how to solve such problems:
 Implemented a basic factory method to help create a shape object. It can create 
 squares or circles.
 
+## 8. Command Pattern (Behavioural)
+##### Description
+An object is used to encapsulate all information needed to perform an action or 
+trigger an event at a later time. This information includes the method name, the 
+object that owns the method and values for the method parameters.
+
+##### Implementation
+Implement a queue for printer jobs.
+
+
 
