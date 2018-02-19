@@ -145,3 +145,18 @@ wraps the enumeration/iterator that is produced, generating a new object that ha
 the iteration behaviour that we want but the same interface as the original 
 enumeration/iterator.
 
+## 7. Factory method Pattern (Creational)
+##### Description
+It is a creational pattern that uses factory methods to deal with the problem of 
+creating objects without having to specify the exact class of the object that 
+will be created.
+The Factory Method design pattern solves problems like:
+1. How can an object be created so that subclasses can redefine which class to instantiate?
+2. How can a class defer instantiation to subclasses?
+
+The Factory Method design pattern describes how to solve such problems:
+1. Define a separate operation (factory method) for creating an object.
+2. Create an object by calling a factory method.
+
+##### Implementation
+
