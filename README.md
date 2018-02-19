@@ -121,4 +121,27 @@ the coffees: Espresso, Espresso Con Panna, Café Late, Cappuccino and Café Moch
 We’ll include 2 extras - whipped cream (“whipped”) and an extra shot of espresso; 
 and three changes - decaf, steamed milk (“wet”) and foamed milk (“dry”).
 
+## 6. Iterator Pattern (Behavioral)
+##### Description
+Used to get a way to access the elements of a collection object in sequential 
+manner without any need to know its underlying representation. The iterator 
+pattern decouples algorithms from containers; in some cases, algorithms are 
+necessarily container-specific and thus cannot be decoupled.
+
+##### Implementation
+Python prescribes a syntax for iterators as part of the language itself, so that 
+language keywords such as for work with what Python calls sequences. A sequence 
+has an \_\_iter__() method that returns an iterator object. The "iterator protocol" 
+requires \_\_next__() return the next element or raise a StopIteration exception upon 
+reaching the end of the sequence. Iterators also provide an \_\_iter__() method 
+returning themselves so that they can also be iterated over e.g., using a for 
+loop.
+
+##### Implementing type-safe iterator
+To design a container that only accept a particular type of object, you would 
+design an iterator that imposes the constraint that the type of objects it iterates
+over be of a certain type. Use the decorator pattern to create a class that simply
+wraps the enumeration/iterator that is produced, generating a new object that has 
+the iteration behaviour that we want but the same interface as the original 
+enumeration/iterator.
 
