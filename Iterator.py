@@ -1,19 +1,23 @@
-class TypedIterator(Iterator):
+class ClassCastException(Exception):
+    pass
+
+
+class TypedIterator(object):
 
     def __init__(self, it, type):
         self.imp = it
         self.type = type
 
     def hasNext(self):
-        return imp.hasNext()
+        return self.imp.has_next()
 
     def remove(self):
-        imp.remove()
+        self.imp.remove()
         
     def next(self):
-        obj = imp.next()
-        if(!type.isInstance(obj))
-            throw ClassCastException(
+        obj = self.imp.next()
+        if not type.isInstance(obj):
+            raise ClassCastException(
               "TypedIterator for type " + type +
               " encountered type: " + obj.getClass())
         return obj
