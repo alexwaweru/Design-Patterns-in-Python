@@ -192,8 +192,14 @@ it passes the command object to the invoker object.
 ##### Implementation
 Implement a queue for printer jobs.
 
-## 9. Strategy Pattern
+## 9. Strategy Pattern/ Policy pattern (Behaviour)
 ##### Description
+It is a behavioral software design pattern that enables selecting an algorithm 
+at runtime.
+Strategy also adds a “Context” which can be a surrogate class that controls the 
+selection and use of the particular strategy object-just like State!
+
+##### Implementation
 
 
 
