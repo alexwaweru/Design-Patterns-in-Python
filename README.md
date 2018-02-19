@@ -200,6 +200,13 @@ Strategy also adds a “Context” which can be a surrogate class that controls 
 selection and use of the particular strategy object-just like State!
 
 ##### Implementation
+Implement different solvers for mining minimum in different contexts
 
+## 10. Chain of Responsibility
+##### Description
+Chain of Responsibility might be thought of as a dynamic generalization of 
+recursion using Strategy objects. You make a call, and each Strategy in a 
+linked sequence tries to satisfy the call.
+##### Implementation
 
 
